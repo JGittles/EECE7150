@@ -1,8 +1,6 @@
 import os
 import cv2
-import matplotlib
-import numpy as np
-import matplotlib.pyplot as plt
+
 
 
 def pointLoad(imgpath):
@@ -43,9 +41,17 @@ def pointLoad(imgpath):
 #     cv2.resize(img, (0,0), fx=.1, fy=.1)
 #     cv2.imwrite("small-"+image,img)
 
-img = pointLoad("../1.jpg")
+img = pointLoad("../4.jpg")
 
-img = cv2.circle(img, (100,1500), radius=10, color=(0, 0, 255), thickness=-1)
+# img = cv2.circle(img, (1388,1044), radius=10, color=(0, 0, 255), thickness=-1)
+# img = cv2.circle(img, (1932,1032), radius=10, color=(0, 0, 255), thickness=-1)
+# img = cv2.circle(img, (1936,1420), radius=10, color=(0, 0, 255), thickness=-1)
+# img = cv2.circle(img, (1392,1432), radius=10, color=(0, 0, 255), thickness=-1)
+
+img = cv2.circle(img, (448,984), radius=10, color=(0, 0, 255), thickness=-1)
+img = cv2.circle(img, (992,968), radius=10, color=(0, 0, 255), thickness=-1)
+img = cv2.circle(img, (1000,1360), radius=10, color=(0, 0, 255), thickness=-1)
+img = cv2.circle(img, (460,1376), radius=10, color=(0, 0, 255), thickness=-1)
 img=cv2.resize(img, (0,0), fx=.25, fy=.25)
 # img=cv2.resize(img, (0,0), fx=.5, fy=.5)
 cv2.imshow('point',img)
