@@ -41,7 +41,7 @@ def pointLoad(imgpath):
 #     cv2.resize(img, (0,0), fx=.1, fy=.1)
 #     cv2.imwrite("small-"+image,img)
 
-img = pointLoad("../4.jpg")
+img = pointLoad("../.jpg")
 
 # img = cv2.circle(img, (1388,1044), radius=10, color=(0, 0, 255), thickness=-1)
 # img = cv2.circle(img, (1932,1032), radius=10, color=(0, 0, 255), thickness=-1)
